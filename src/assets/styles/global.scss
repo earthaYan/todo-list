@@ -1,0 +1,11 @@
+@import './reset';
+
+@function px2rem($px){
+  $basis: 37.5;
+  @return ($px / $basis) + rem;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
