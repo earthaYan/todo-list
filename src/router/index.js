@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import TodoList from '@/components/TodoList'
+import TodoList from '@/TodoList'
 
 Vue.use(Router)
 

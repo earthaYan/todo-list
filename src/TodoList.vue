@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ListView from './ListView'
+import ListView from './components/ListView'
 export default {
   components: {
     ListView
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import '../assets/styles/global';
+@import './assets/styles/global';
 .todo{
   position: relative;
   top: 0;
@@ -26,8 +26,8 @@ export default {
   height: 100%;
   @include center;
   .mask{
-    background: black;
-    opacity: 0.5;
+    background: #ff4500;
+    opacity: 0.4;
     z-index: -1;
     position: absolute;
     top: 0;
@@ -45,15 +45,16 @@ export default {
     color: #e3170d;
   }
   .footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: px2rem(60);
-    @include center;
+    text-align: center;
     font-size: px2rem(12);
     font-weight: normal;
     color: #ffffff;
+    @include center;
   }
 }
 </style>
